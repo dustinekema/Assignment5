@@ -9,5 +9,4 @@ public class Assignment5 {
 		// TODO Auto-generated method stub
 		MainWindow.startGUI();
 	}
-
 }

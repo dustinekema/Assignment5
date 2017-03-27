@@ -7,4 +7,5 @@ public interface IArea {
 	void setElevation(double elevation);
 	double getRadiation();
 	void setRadiation(double radiation);
+	double calcConsumedEnergy();
 }
