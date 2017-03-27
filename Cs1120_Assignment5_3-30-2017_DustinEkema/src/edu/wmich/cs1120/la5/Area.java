@@ -5,6 +5,12 @@ public abstract class Area implements IArea {
 	private double elevation;
 	private double radiation;
 	
+	public Area(double basicEnergyCost, double elevation, double radiation) {
+		this.basicEnergyCost = basicEnergyCost;
+		this.elevation = elevation;
+		this.radiation = radiation;
+	}
+	
 	public double getBasicEnergyCost() {
 		return this.basicEnergyCost;
 	}
