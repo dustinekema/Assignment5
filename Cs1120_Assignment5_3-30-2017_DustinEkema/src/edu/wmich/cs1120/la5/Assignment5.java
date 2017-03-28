@@ -10,7 +10,8 @@ import edu.wmich.cs1120.la5.gui.MainWindow;
  *  addition to total energy consumed, for example, get the range of elevation, get the 
  *  total radiation, etc.
  * 
- * @author Ricardo
+ * @author Ricardo Quiroga
+ * @author Dustin Ekema
  *
  */
 public class Assignment5 {

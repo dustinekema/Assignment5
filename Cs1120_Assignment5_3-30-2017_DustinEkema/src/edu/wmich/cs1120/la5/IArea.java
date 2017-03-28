@@ -4,7 +4,8 @@ package edu.wmich.cs1120.la5;
  * This is the IArea interface. This provides the basic rules for the Area class, 
  * which will implement this interface.
  * 
- * @author Ricardo
+ * @author Ricardo Quiroga
+ * @author Dustin Ekema
  *
  */
 public interface IArea {

@@ -5,7 +5,8 @@ package edu.wmich.cs1120.la5;
  * methods from the Area class, this class calculates how much energy is consumed 
  * when the rover comes across a low area.
  * 
- * @author Ricardo
+ * @author Ricardo Quiroga
+ * @author Dustin Ekema
  *
  */
 public class LowArea extends Area {

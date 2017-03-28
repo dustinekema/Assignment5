@@ -4,7 +4,8 @@ package edu.wmich.cs1120.la5;
  * This is the IOperation interface. It sets the required methods for any class that 
  * implements this interface.
  * 
- * @author Ricardo
+ * @author Ricardo Quiroga
+ * @author Dustin Ekema
  *
  */
 public interface IOperation {

@@ -5,7 +5,9 @@ import java.io.IOException;
 /**
  * This is the IMapCreator interface. This provides the basic rules for the MapCreator class, 
  * which will implement this interface.
- * @author Ricardo
+ * 
+ * @author Ricardo Quiroga
+ * @author Dustin Ekema
  *
  */
 public interface IMapCreator {

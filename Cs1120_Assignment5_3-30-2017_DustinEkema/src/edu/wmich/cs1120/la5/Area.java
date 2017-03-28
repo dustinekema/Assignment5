@@ -3,7 +3,9 @@ package edu.wmich.cs1120.la5;
 /**
  * This is the Area class which implements the IArea interface. This class is 
  * called each time a new line of an input file is read and processed.
- * @author Ricardo
+ * 
+ * @author Ricardo Quorga
+ * @author Dustin Ekema
  *
  */
 public abstract class Area implements IArea {

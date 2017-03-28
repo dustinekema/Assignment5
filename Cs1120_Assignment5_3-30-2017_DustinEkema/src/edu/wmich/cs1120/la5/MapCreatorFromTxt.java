@@ -10,7 +10,8 @@ import edu.wmich.cs1120.la5.TerrainScanner;
  * of an input file (.txt file) and determining if that section of the map is passable 
  * or not.
  * 
- * @author Ricardo
+ * @author Ricardo Quiroga
+ * @author Dustin Ekema
  *
  */
 public class MapCreatorFromTxt implements IMapCreator {
