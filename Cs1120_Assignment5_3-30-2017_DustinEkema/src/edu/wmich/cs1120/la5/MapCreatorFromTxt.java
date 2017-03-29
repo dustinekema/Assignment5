@@ -6,9 +6,9 @@ import java.util.Scanner;
 import edu.wmich.cs1120.la5.TerrainScanner;
 
 /**
- * This is the MapCreatorFromTxt class which implements the IMapCreator interface. This class creates the map by reading each line 
- * of an input file (.txt file) and determining if that section of the map is passable 
- * or not.
+ * This is the MapCreatorFromTxt class which implements the IMapCreator interface. This 
+ * class creates the map by reading each line of an input file (.txt file) and determining 
+ * if that section of the map is passable or not.
  * 
  * @author Ricardo Quiroga
  * @author Dustin Ekema
