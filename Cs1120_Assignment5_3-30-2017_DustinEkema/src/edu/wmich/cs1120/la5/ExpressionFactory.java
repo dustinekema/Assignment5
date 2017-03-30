@@ -6,6 +6,9 @@ package edu.wmich.cs1120.la5;
  *
  */
 public class ExpressionFactory {
+	private char operator;
+	private int val1;
+	private int val2;
 
 	public static IExpression getExpression(char operator, int val1, int val2) {
 		return null;
