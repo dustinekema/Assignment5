@@ -75,7 +75,7 @@ public class ElevationAnalyzer implements IRover {
 	 */
 	@Override
 	public String toString() {
-		return null;
+		return "Elevation Analysis: ";
 	}
 
 }
