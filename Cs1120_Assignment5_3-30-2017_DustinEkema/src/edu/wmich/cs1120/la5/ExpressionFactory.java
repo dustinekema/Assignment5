@@ -11,11 +11,14 @@ public class ExpressionFactory {
 	private int val2;
 
 	public static IExpression getExpression(char operator, int val1, int val2) {
-	Literal lit = new Literal();
-	Addition add = new Addition();
+	Literal lit1 = new Literal(val1);
+	Literal lit2 = new Literal(val2);
+	
 	Subtraction sub = new Subtraction();
 		if(operator == '+'){
-		lit.setValue(val1);
+	Addition add = new Addition();
+	BinaryExpression exp = new BinaryExpression(add,lit1,lit2);
+	return exp;
 			
 		}
 	return null;

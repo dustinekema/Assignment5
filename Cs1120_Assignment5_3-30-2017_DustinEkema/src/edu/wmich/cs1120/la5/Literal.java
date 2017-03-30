@@ -11,5 +11,7 @@ private Integer value;
 		// TODO Auto-generated method stub
 		this.value =value;
 	}
-	
+	public Literal(int val){
+		this.value = val;
+	}
 }
