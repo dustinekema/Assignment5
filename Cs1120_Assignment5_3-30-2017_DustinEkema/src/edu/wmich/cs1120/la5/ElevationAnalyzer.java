@@ -38,9 +38,11 @@ public class ElevationAnalyzer implements IRover {
 
 	/**
 	 * This will get the result of the analysis according to the type of the analyzer.
+	 * @return 
 	 */
 	@Override
 	public void analyzePath() {
+		
 		double pathElevation = 0;
 		double avElevation = 0;
 		for (int i = 0; i < path.size(); i++) {
@@ -48,6 +50,7 @@ public class ElevationAnalyzer implements IRover {
 			
 	}
 		avElevation = pathElevation/path.size();
+		analysis = toString() + avElevation;
 	}
 	/**
 	 * This will return the name of the analyzer.

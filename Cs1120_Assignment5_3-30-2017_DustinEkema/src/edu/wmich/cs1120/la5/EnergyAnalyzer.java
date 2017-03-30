@@ -46,7 +46,7 @@ public class EnergyAnalyzer implements IRover {
 		for (int i = 0; i < path.size(); i++) {
 			pathEnergy += getPath().get(i).calcConsumedEnergy();
 		}
-		
+		analysis = toString() + pathEnergy;
 	}
 
 	/**
