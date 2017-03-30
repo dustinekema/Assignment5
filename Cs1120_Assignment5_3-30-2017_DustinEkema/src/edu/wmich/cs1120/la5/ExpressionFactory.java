@@ -8,9 +8,14 @@ package edu.wmich.cs1120.la5;
 public class ExpressionFactory {
 
 	public static IExpression getExpression(char operator, int val1, int val2) {
-		return null;
+	Literal lit = new Literal();
+	Addition add = new Addition();
+	Subtraction sub = new Subtraction();
+		if(operator == '+'){
+		lit.setValue(val1);
+			
+		}
+	return null;
 	}
-	public static void setExpression(char operator, int val1, int val2) {
-		
-	}
+	
 }
