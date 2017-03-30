@@ -4,7 +4,8 @@ package edu.wmich.cs1120.la5;
  * Addition implements IOperaction
  * @author Ricardo Quiroga
  * @author Dustin Ekema
- *
+ *@param left
+ *@param right
  */
 public class Addition implements IOperation{
 
