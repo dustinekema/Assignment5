@@ -22,14 +22,19 @@ public class ExpressionFactory {
 	Literal lit1 = new Literal(val1);
 	Literal lit2 = new Literal(val2);
 	
-	Subtraction sub = new Subtraction();
+	
 		if(operator == '+'){
 	Addition add = new Addition();
-	BinaryExpression exp = new BinaryExpression(add,lit1,lit2);
+	BinaryExpression exp = new BinaryExpression(add,lit2,lit1);
 	return exp;
 			
 		}
-	return null;
+		else{
+			IOperation sub = new Subtraction();
+			BinaryExpression exp = new BinaryExpression(sub,lit1,lit2);
+			return exp;
+		}
+	
 	}
 	
 }

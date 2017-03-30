@@ -19,10 +19,16 @@ public class MapCreatorFromDat implements IMapCreator {
 
 	/**
 	 * This method reads the input file (.dat file).
+	 * @param val1
+	 * @param val2
+	 * @param elevation
+	 * @param fileName
+	 * @param threshold
+	 * @param radiation
+	 * @param basicEnergyCost
 	 */
 	@Override
 	public void scanTerrain(String fileName, int threshold) throws IOException {
-		int i = 0;
 		RandomAccessFile randomFile = new RandomAccessFile(fileName, "r");
 
 			for (int row = 0; row < area.length; row++) {
@@ -33,10 +39,11 @@ public class MapCreatorFromDat implements IMapCreator {
 					char operator = randomFile.readChar();
 					int val1 = randomFile.readInt();
 					int val2 = randomFile.readInt();
-					
 					factory = ExpressionFactory.getExpression(operator, val1, val2);
 					if (factory.getValue() != -1) {
-						randomFile.seek(factory.getValue() * 34);
+						randomFile.seek(factory.getValue()* 34);
+						
+					
 					}
 					
 					if (radiation >= 0.5) {
@@ -51,8 +58,9 @@ public class MapCreatorFromDat implements IMapCreator {
 					}
 				}
 			}
+			scanner.setTerrain(area);
 		}
-
+	
 	
 
 	@Override

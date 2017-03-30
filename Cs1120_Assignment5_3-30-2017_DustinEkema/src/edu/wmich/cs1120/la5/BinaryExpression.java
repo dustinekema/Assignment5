@@ -39,6 +39,6 @@ private IExpression right;
 		this.op=op;
 		this.left =left;
 		this.right=right;
-		
+		this.value= this.op.perform(left,right);
 	}
 }
