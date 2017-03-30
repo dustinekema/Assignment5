@@ -41,10 +41,14 @@ public class ElevationAnalyzer implements IRover {
 	 */
 	@Override
 	public void analyzePath() {
-		// TODO Auto-generated method stub
-		
+		double pathElevation = 0;
+		double avElevation = 0;
+		for (int i = 0; i < path.size(); i++) {
+			pathElevation += getPath().get(i).getElevation();
+			
 	}
-
+		avElevation = pathElevation/path.size();
+	}
 	/**
 	 * This will return the name of the analyzer.
 	 * @return String this is the analyzer that is returned.

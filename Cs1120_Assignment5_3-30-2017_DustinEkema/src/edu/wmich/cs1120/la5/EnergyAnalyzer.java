@@ -42,10 +42,11 @@ public class EnergyAnalyzer implements IRover {
 	@Override
 	public void analyzePath() {
 		// TODO Auto-generated method stub
-		double pathEnergy = 0;
+		int pathEnergy=0;
 		for (int i = 0; i < path.size(); i++) {
 			pathEnergy += getPath().get(i).calcConsumedEnergy();
 		}
+		
 	}
 
 	/**

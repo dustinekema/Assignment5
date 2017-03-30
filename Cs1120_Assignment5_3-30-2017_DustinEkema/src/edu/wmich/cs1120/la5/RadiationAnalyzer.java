@@ -42,6 +42,10 @@ public class RadiationAnalyzer implements IRover {
 	@Override
 	public void analyzePath() {
 		// TODO Auto-generated method stub
+		int pathRad=0;
+		for (int i = 0; i < path.size(); i++) {
+			pathRad += getPath().get(i).getRadiation();
+		}
 		
 	}
 
