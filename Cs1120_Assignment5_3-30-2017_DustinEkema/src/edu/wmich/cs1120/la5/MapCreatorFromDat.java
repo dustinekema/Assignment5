@@ -25,7 +25,6 @@ public class MapCreatorFromDat implements IMapCreator {
 		int i = 0;
 		RandomAccessFile randomFile = new RandomAccessFile(fileName, "r");
 
-		while (i != -1) {
 			for (int row = 0; row < area.length; row++) {
 				for (int col = 0; col < area[0].length; col++) {
 					double basicEnergyCost = randomFile.readDouble();
@@ -36,24 +35,24 @@ public class MapCreatorFromDat implements IMapCreator {
 					int val2 = randomFile.readInt();
 					
 					factory = ExpressionFactory.getExpression(operator, val1, val2);
+					System.out.println(factory.getValue());
 					if (factory.getValue() != -1) {
 						randomFile.seek(factory.getValue() * 34);
 					}
-//					if (radiation >= .5) {
-//						Area highArea = new HighArea(basicEnergyCost, elevation, radiation);
-//						area[row][col] = highArea;
-//					} else if ((radiation < .5) && (elevation > (threshold * .5))) {
-//						Area highArea = new HighArea(basicEnergyCost, elevation, radiation);
-//						area[row][col] = highArea;
-//					} else {
-//						Area lowArea = new LowArea(basicEnergyCost, elevation, radiation);
-//						area[row][col] = lowArea;
-//					}
+					
+					if (radiation >= 0.5) {
+						Area highArea = new HighArea(basicEnergyCost, elevation, radiation);
+						area[row][col] = highArea;
+					} else if ((radiation < .5) && elevation > (threshold * .5)) {
+						Area highArea = new HighArea(basicEnergyCost, elevation, radiation);
+						area[row][col] = highArea;
+					} else {
+						Area lowArea = new LowArea(basicEnergyCost, elevation, radiation);
+						area[row][col] = lowArea;
+					}
 				}
 			}
 		}
-
-	}
 
 	@Override
 	public TerrainScanner getScanner() {
