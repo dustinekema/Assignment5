@@ -63,7 +63,7 @@ public class MapCreatorFromDat implements IMapCreator {
 			}
 		}
 
-	}
+	
 
 	@Override
 	public TerrainScanner getScanner() {
