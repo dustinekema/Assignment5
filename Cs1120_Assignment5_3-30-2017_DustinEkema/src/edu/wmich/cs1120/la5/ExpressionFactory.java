@@ -13,4 +13,7 @@ public class ExpressionFactory {
 	public static IExpression getExpression(char operator, int val1, int val2) {
 		return null;
 	}
+	public static void setExpression(char operator, int val1, int val2) {
+		
+	}
 }

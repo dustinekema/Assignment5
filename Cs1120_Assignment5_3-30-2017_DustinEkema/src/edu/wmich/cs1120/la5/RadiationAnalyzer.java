@@ -14,6 +14,7 @@ public class RadiationAnalyzer implements IRover {
 	private ArrayList<IArea> path;
 	private String analysis;
 	
+	
 	/**
 	 * This will return this class' ArrayList<Area> whenever it is called.
 	 * @return ArrayList<Area> this is the ArrayList<Area> that will be returned.
@@ -75,6 +76,6 @@ public class RadiationAnalyzer implements IRover {
 	 */
 	@Override
 	public String toString() {
-		return null;
+		return "Radiation Analysis: ";
 	}
 }

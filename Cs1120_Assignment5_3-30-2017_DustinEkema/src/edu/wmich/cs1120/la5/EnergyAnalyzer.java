@@ -75,6 +75,6 @@ public class EnergyAnalyzer implements IRover {
 	 */
 	@Override
 	public String toString() {
-		return null;
+		return "Energy Analysis: ";
 	}
 }
