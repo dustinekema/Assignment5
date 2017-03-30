@@ -35,7 +35,6 @@ public class MapCreatorFromDat implements IMapCreator {
 					int val2 = randomFile.readInt();
 					
 					factory = ExpressionFactory.getExpression(operator, val1, val2);
-					System.out.println(factory.getValue());
 					if (factory.getValue() != -1) {
 						randomFile.seek(factory.getValue() * 34);
 					}
@@ -50,9 +49,21 @@ public class MapCreatorFromDat implements IMapCreator {
 						Area lowArea = new LowArea(basicEnergyCost, elevation, radiation);
 						area[row][col] = lowArea;
 					}
+//					if (radiation >= .5) {
+//						Area highArea = new HighArea(basicEnergyCost, elevation, radiation);
+//						area[row][col] = highArea;
+//					} else if ((radiation < .5) && (elevation > (threshold * .5))) {
+//						Area highArea = new HighArea(basicEnergyCost, elevation, radiation);
+//						area[row][col] = highArea;
+//					} else {
+//						Area lowArea = new LowArea(basicEnergyCost, elevation, radiation);
+//						area[row][col] = lowArea;
+//					}
 				}
 			}
 		}
+
+	}
 
 	@Override
 	public TerrainScanner getScanner() {
